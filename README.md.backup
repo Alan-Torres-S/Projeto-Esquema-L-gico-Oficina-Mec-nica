@@ -1,0 +1,51 @@
+# Projeto - Construindo um Esquema Lógico de Banco de Dados do Zero
+
+Neste repositório encontra-se o projeto do Bootcamp Unimed BH da Digital Innovation One (DIO) sobre a construção de esquema lógico para Banco de Dados dentro de um contexto de oficina.
+
+# Sobre o Projeto
+
+O projeto refere-se a criação de script SQL para a criação de esquema lógico de banco de dados do zero. Com base nos conceitos abordados no decorrer do curso, foram realizados a criação e o desenvolvimento deste modelo.
+
+Para a elaboração deste esquema lógico de banco de dados foi utilizada a ferramenta MySQL Workbench.
+
+# Premissas do projeto
+
+Criação do zero de um projeto lógico de banco de dados para a reprodução de um cenário de oficina mecânica.
+
+Após a criação do esquema lógico e da persistência dos dados, serão realizados testes que visem a prática dos conteúdos estudados.
+
+Estes testes consistem em queries SQL que possuam cláusulas, como:
+
+* Recuperações simples com SELECT Statement;
+* Filtros com WHERE Statement;
+* Crie expressões para gerar atributos derivados;
+* Defina ordenações dos dados com ORDER BY;
+* Condições de filtros aos grupos – HAVING Statement;
+* Crie junções entre tabelas para fornecer uma perspectiva mais complexa dos dados;
+
+
+## Narrativa do projeto
+
+* Sistema de controle e gerenciamento de execução de ordens de serviço em uma oficina mecânica.
+* Clientes levam veículos à oficina mecânica para serem consertados ou para passarem por revisões  periódicas.
+* Cada veículo é designado a uma equipe de mecânicos que identifica os serviços a serem executados e preenche uma OS com data de entrega.
+* A partir da OS, calcula-se o valor de cada serviço, consultando-se uma tabela de referência de mão-de-obra.
+* O valor de cada peça também irá compor a OS, o cliente autoriza a execução dos serviços.
+* A mesma equipe avalia e executa os serviços.
+* Os mecânicos possuem código, nome, endereço e especialidade.
+* Cada OS possui: n°, data de emissão, um valor, status e uma data para conclusão dos trabalhos.
+
+## Questionamentos elaborados para o embasamento das queries SQL
+
+Para a elaboração das queries SQL, buscou-se utilizar recursos de recuperação de dados que possam auxiliar no acompanhamento e tomada de decisões de uma oficina mecânica.
+
+Dentro dos questionamentos levantados, priorizou-se abranger diversas cláusulas estudadas no decorrer do curso.
+
+Queries utilizadas:
+
+1. Recuperar a relação de todos os clientes e a quantidade de veículos que cada um possui;
+2. Relação de peças e estoque;
+3. Relação de clientes pessoa física com ordem de serviços que ainda não foram concluídas;
+4. Relação de clientes pessoa jurídica com ordem de serviços concluídas;
+5. Relação de mecânicos que trabalham no Ceará e suas especialidades;
+6. Detalhamento de peças e serviços cobrados em cada Ordem de Serviço;
